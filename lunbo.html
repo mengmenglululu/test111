@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lunbo</title>
+	<style type="text/css">
+		#demo{
+			width:500px;
+			height:200px;
+			margin:150px auto;
+			border:1px solid red;
+		}
+	</style>
+</head>
+<body>
+<div id="demo">
+</div>
+<script type="text/javascript">
+    var demo = document.getElementById("demo");
+	var imgs = document.createElement("img");
+	demo.appendChild(imgs);
+	var array = ["luobotu/taobao/1.jpg","luobotu/taobao/2.jpg","luobotu/taobao/3.jpg","luobotu/taobao/4.jpg","luobotu/taobao/5.jpg"]
+    var i = -1;
+	var timer = setInterval(function(){
+		i++;
+		i = i % 5;
+		imgs.src = array[i];
+		// imgs.style.transform = "translateX(-500px)";
+	},1000)
+	
+	
+	
+	
+</script>
+	
+</body>
+</html>
